@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesLookupOptions = exports.toLookupUri = exports.ItunesLookupType = void 0;
 var ItunesLookupType;
 (function (ItunesLookupType) {
     ItunesLookupType["ID"] = "id";
@@ -45,6 +46,7 @@ class ItunesLookupOptions {
         this.extras = options.extras;
     }
 }
+exports.ItunesLookupOptions = ItunesLookupOptions;
 ItunesLookupOptions.from = (options) => new ItunesLookupOptions({
     keys: options.keys,
     keyType: options.keyType,
@@ -52,4 +54,3 @@ ItunesLookupOptions.from = (options) => new ItunesLookupOptions({
     limit: options.limit,
     extras: options.extras
 });
-exports.ItunesLookupOptions = ItunesLookupOptions;

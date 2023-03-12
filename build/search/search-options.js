@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesSearchOptions = exports.toSearchUri = void 0;
 function toSearchUri(options) {
     const searchTerm = "term=" + options.term;
     const searchCountry = options.country ? "&country=" + options.country : "";
@@ -32,6 +33,7 @@ class ItunesSearchOptions {
         this.extras = options.extras;
     }
 }
+exports.ItunesSearchOptions = ItunesSearchOptions;
 ItunesSearchOptions.from = (options) => new ItunesSearchOptions({
     term: options.term,
     country: options.country,
@@ -41,4 +43,3 @@ ItunesSearchOptions.from = (options) => new ItunesSearchOptions({
     lang: options.lang,
     extras: options.extras
 });
-exports.ItunesSearchOptions = ItunesSearchOptions;

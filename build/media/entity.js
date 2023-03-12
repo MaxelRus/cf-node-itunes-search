@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesEntityAll = exports.ItunesEntityEbook = exports.ItunesEntitySoftware = exports.ItunesEntityTvShow = exports.ItunesEntityShortFilm = exports.ItunesEntityAudioBook = exports.ItunesEntityMusicVideo = exports.ItunesEntityMusic = exports.ItunesEntityPodcast = exports.ItunesEntityMovie = void 0;
 var ItunesEntityMovie;
 (function (ItunesEntityMovie) {
     ItunesEntityMovie["MovieArtist"] = "movieArtist";

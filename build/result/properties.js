@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ItunesProperties = void 0;
 class ItunesProperties {
     constructor(options) {
         this.wrapperType = options.wrapperType;
